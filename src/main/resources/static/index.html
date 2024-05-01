@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Food Truck Finder</h1>
+    <div class="input-group mb-3">
+        <label for="truckType" class="input-group-text">Enter Food Type:</label>
+        <input type="text" id="truckType" class="form-control" placeholder="Enter Food Type (e.g., Taco)">
+        <div class="input-group-append">
+            <button class="btn btn-primary" onclick="fetchTrucks()">Search</button>
+        </div>
+    </div>
+
+    <div class="result-container mt-3" id="resultContainer">
+        <ul id="truckList" class="list-group"></ul>
+        <p id="noTrucksMessage" class="text-muted d-none">No trucks found for the specified type.</p>
+    </div>
+
+</div>
+
+<script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
